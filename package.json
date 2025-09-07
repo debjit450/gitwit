@@ -1,6 +1,6 @@
 {
     "name": "gitwit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "AI-powered commit message generator from staged git changes",
     "main": "src/generate.js",
     "type": "module",
