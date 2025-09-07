@@ -1,13 +1,13 @@
-# commit-gpt 🤖
+# gitwit 🤖
 
 > AI-powered commit message generator that creates conventional commit messages from your staged git changes
 
-[![npm version](https://badge.fury.io/js/commit-gpt.svg)](https://www.npmjs.com/package/commit-gpt)
+[![npm version](https://badge.fury.io/js/gitwit.svg)](https://www.npmjs.com/package/gitwit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
-- 🚀 **One command**: `npx commit-gpt`
+- 🚀 **One command**: `npx gitwit`
 - 🎯 **Smart analysis**: Reads your `git diff --cached` and understands what changed
 - 📝 **Conventional commits**: Generates messages following [Conventional Commits](https://conventionalcommits.org/) standard
 - ⚡ **Auto-commit**: Optional `--commit` flag to automatically commit with the generated message
@@ -18,12 +18,12 @@
 
 ### Global Installation (Recommended)
 ```bash
-npm install -g commit-gpt
+npm install -g gitwit
 ```
 
 ### One-time Usage
 ```bash
-npx commit-gpt
+npx gitwit
 ```
 
 ## Setup
@@ -54,7 +54,7 @@ git add .
 
 2. Generate commit message:
 ```bash
-commit-gpt
+gitwit
 ```
 
 Example output:
@@ -76,12 +76,12 @@ Generate and automatically commit in one step:
 
 ```bash
 git add .
-commit-gpt --commit
+gitwit --commit
 ```
 
 Or use the short flag:
 ```bash
-git add . && commit-gpt -c
+git add . && gitwit -c
 ```
 
 ### Complete Workflow
@@ -94,27 +94,27 @@ echo "console.log('hello world')" > hello.js
 git add hello.js
 
 # Generate and commit automatically
-commit-gpt --commit
+gitwit --commit
 ```
 
 ## Command Line Options
 
 ```
-Usage: commit-gpt [options]
+Usage: gitwit [options]
 
 Options:
   -c, --commit    Auto-commit with the generated message
   -h, --help      Show help message
 
 Examples:
-  commit-gpt                    # Generate commit message only
-  commit-gpt --commit           # Generate and auto-commit
-  git add . && commit-gpt -c    # Stage changes and auto-commit
+  gitwit                    # Generate commit message only
+  gitwit --commit           # Generate and auto-commit
+  git add . && gitwit -c    # Stage changes and auto-commit
 ```
 
 ## Example Generated Messages
 
-commit-gpt follows [Conventional Commits](https://conventionalcommits.org/) format:
+gitwit follows [Conventional Commits](https://conventionalcommits.org/) format:
 
 - `feat(api): add user authentication endpoint`
 - `fix(ui): resolve button alignment issue`  
@@ -128,11 +128,11 @@ commit-gpt follows [Conventional Commits](https://conventionalcommits.org/) form
 - **Node.js**: Version 16 or higher
 - **Git**: Must be run in a git repository
 - **OpenAI API Key**: Required for AI-powered generation
-- **Staged Changes**: Run `git add` before using commit-gpt
+- **Staged Changes**: Run `git add` before using gitwit
 
 ## Error Handling
 
-commit-gpt provides helpful error messages:
+gitwit provides helpful error messages:
 
 - ❌ **Not in git repo**: "Not a git repository"
 - ❌ **No staged changes**: "No staged changes found" + helpful tip
@@ -143,7 +143,7 @@ commit-gpt provides helpful error messages:
 
 ### API Model
 
-By default, commit-gpt uses `gpt-4o-mini` for fast, cost-effective generation. The model is optimized for:
+By default, gitwit uses `gpt-4o-mini` for fast, cost-effective generation. The model is optimized for:
 - Understanding code diffs
 - Following conventional commit standards  
 - Generating concise, descriptive messages

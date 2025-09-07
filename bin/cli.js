@@ -10,19 +10,19 @@ const help = args.includes('--help') || args.includes('-h');
 
 if (help) {
     console.log(`
-${chalk.bold('commit-gpt')} - AI-powered commit message generator
+${chalk.bold('gitwit')} - AI-powered commit message generator
 
 ${chalk.bold('Usage:')}
-  npx commit-gpt [options]
+  npx gitwit [options]
 
 ${chalk.bold('Options:')}
   -c, --commit    Auto-commit with the generated message
   -h, --help      Show this help message
 
 ${chalk.bold('Examples:')}
-  npx commit-gpt                    # Generate commit message
-  npx commit-gpt --commit           # Generate and auto-commit
-  git add . && npx commit-gpt -c    # Stage changes and auto-commit
+  npx gitwit                    # Generate commit message
+  npx gitwit --commit           # Generate and auto-commit
+  git add . && npx gitwit -c    # Stage changes and auto-commit
 
 ${chalk.bold('Requirements:')}
   - Git repository with staged changes

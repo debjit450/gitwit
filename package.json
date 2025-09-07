@@ -1,11 +1,11 @@
 {
-    "name": "commit-gpt",
+    "name": "gitwit",
     "version": "1.0.0",
     "description": "AI-powered commit message generator from staged git changes",
     "main": "src/generate.js",
     "type": "module",
     "bin": {
-        "commit-gpt": "./bin/cli.js"
+        "gitwit": "./bin/cli.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,12 +22,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/debjitdey450/commit-gpt.git"
+        "url": "https://github.com/debjitdey450/gitwit.git"
     },
     "bugs": {
-        "url": "https://github.com/debjitdey450/commit-gpt/issues"
+        "url": "https://github.com/debjitdey450/gitwit/issues"
     },
-    "homepage": "https://github.com/yourusername/commit-gpt#readme",
+    "homepage": "https://github.com/yourusername/gitwit#readme",
     "engines": {
         "node": ">=16.0.0"
     },
