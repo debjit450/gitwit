@@ -1,0 +1,45 @@
+{
+    "name": "commit-gpt",
+    "version": "1.0.0",
+    "description": "AI-powered commit message generator from staged git changes",
+    "main": "src/generate.js",
+    "type": "module",
+    "bin": {
+        "commit-gpt": "./bin/cli.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "git",
+        "commit",
+        "ai",
+        "gpt",
+        "conventional-commits",
+        "cli"
+    ],
+    "author": "Debjit Dey debjitdey450@gmail.com",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/debjitdey450/commit-gpt.git"
+    },
+    "bugs": {
+        "url": "https://github.com/debjitdey450/commit-gpt/issues"
+    },
+    "homepage": "https://github.com/yourusername/commit-gpt#readme",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "openai": "^4.28.0",
+        "execa": "^8.0.1",
+        "chalk": "^5.3.0",
+        "ora": "^8.0.1"
+    },
+    "files": [
+        "bin/",
+        "src/",
+        "README.md"
+    ]
+}
