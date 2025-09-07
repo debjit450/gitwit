@@ -166,7 +166,7 @@ MIT © [Debjit Dey]
 
 ## Changelog
 
-### v1.0.0
+### v1.0.2
 - Initial release
 - Basic commit message generation
 - Auto-commit functionality
